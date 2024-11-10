@@ -20,11 +20,6 @@ a {
 	color: #fff;
 }
 
-i {
-	font-style: normal;
-	font-family: arial;
-}
-
 main {
 	width: 100%;
 	height: 100%;
@@ -147,7 +142,20 @@ section {
 	color: #3B5998;
 }
 
-/*Hover animations */
+.flocos, .floco {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 5px;
+	height: 5px;
+	background-color: rgb( 255, 255, 255, 0.4);
+	backdrop-filter: blur(50px);
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px #fff;
+						 -1px -1px 5px #fff;
+}
+
+/*Transition */
 
 .inputs:hover, .inputs:focus {
 	border-bottom: 1.8px solid #07f;
@@ -183,4 +191,23 @@ section {
 
 .createAccount:hover {
 	text-decoration: underline;
+}
+
+
+/*animations*/
+
+.floco {
+	animation-name: floco1;
+	animation-duration: 6s;
+}
+
+@keyframes floco1 {
+	from {top: 0px;
+		left: 0px;
+	}
+	to {bottom: 0px;
+		left: 0px;
+	}
+	
+	
 }
